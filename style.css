@@ -1,0 +1,68 @@
+body {
+    color: #111;
+    background: #fff;
+    height: 100%;
+    /* animate color change */
+    transition: background-color 1s;
+    transition: color 2s;
+}
+
+@font-face
+{
+    font-family: DSEG;
+    src: url(dseg.ttf);
+}
+
+.dark {
+    color: #fff;
+    background: #333;
+}
+
+#counter {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    /* dseg.ttf */
+    font-family: 'DSEG', sans-serif;
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+}
+
+#label {
+    margin: 0 auto;
+    margin-top: 12%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 4vw;
+    font-family: sans-serif;
+    animation-name: FadeIn;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #counter {
+        font-size: 15vw;
+    }
+
+    #label {
+        font-size: 5vw;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#dark-mode-checkbox {
+    background: none;
+    color: inherit;
+}
